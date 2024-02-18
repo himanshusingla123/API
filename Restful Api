@@ -1,7 +1,7 @@
 A Representational State Transfer (RESTful) API is an architectural style for designing networked applications. It is based on a set of principles that describe how resources should be defined and addressed, and how interactions should be performed between clients and servers. RESTful APIs are widely used in modern web development due to their simplicity, scalability, and flexibility. Let's explore the key aspects of RESTful APIs, including the types of operations used and the formats typically employed:
-``
-``
-``` image
+
+```image
+
 +----------------+       +----------------+       +----------------+
 |                |       |                |       |                |
 |     Client     |       |     Server     |       |    Resource    |
