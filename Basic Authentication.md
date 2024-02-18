@@ -3,10 +3,10 @@
 Basic authentication is a simple authentication scheme built into the HTTP protocol, typically used for web applications or APIs to authenticate users. It involves sending a username and password with each request, which are encoded, but not encrypted, before being transmitted over the network. Here's how it works and why it's not encrypted:
 
 1. **Client Request:**
-   When a client (e.g., a web browser or an API client) attempts to access a protected resource on a server, it includes an "Authorization" header in the HTTP request.
+   When a client (e.g., a web browser or an API client) attempts to access a protected resource on a server, it includes an Authentication header in the HTTP request.
 
-2. **Authorization Header:**
-   The "Authorization" header contains the word "Basic" followed by a space and then a Base64-encoded string representing the username and password concatenated with a colon (e.g., "username:password").
+2. **Authentication Header:**
+   The Authentication header contains the word "Basic" followed by a space and then a Base64-encoded string representing the username and password concatenated with a colon (e.g., "username:password").
 
 3. **Base64 Encoding:**
    Base64 encoding is a reversible encoding mechanism that converts binary data into ASCII text format. It is used to ensure that the username and password can be safely transmitted over the network without causing issues with special characters or encoding discrepancies.
@@ -15,7 +15,7 @@ Basic authentication is a simple authentication scheme built into the HTTP proto
    The Base64-encoded string, containing the username and password, is transmitted over the network as part of the HTTP request headers. However, it's important to note that Base64 encoding is not a form of encryption; it's simply an encoding mechanism that can be easily reversed. Therefore, the credentials are not encrypted during transmission.
 
 5. **Server Authentication:**
-   Upon receiving the request, the server extracts the username and password from the Base64-encoded string in the "Authorization" header. It then compares these credentials against its authentication database to validate the user's identity.
+   Upon receiving the request, the server extracts the username and password from the Base64-encoded string in the Authentication header. It then compares these credentials against its authentication database to validate the user's identity.
 
 6. **Security Considerations:**
    Basic authentication is considered insecure for several reasons:
