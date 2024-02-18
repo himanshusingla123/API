@@ -37,7 +37,6 @@ A Representational State Transfer (RESTful) API is an architectural style for de
 
  ```
 ![03ad197b-52fc-4a30-a48a-c65f61f65752](https://github.com/himanshusingla123/API/assets/95504579/c0cafaab-46f2-41b2-8812-5e18884b5754)
-![c86ebc41-2970-4455-bcc7-bca43c920e13](https://github.com/himanshusingla123/API/assets/95504579/3c5b5271-ca46-43ed-![5afadccc-b15c-473f-845e-9b19bb804eaf])
 ![imag](https://github.com/himanshusingla123/API/assets/95504579/d4b1de56-8178-4f53-8c87-6d0890a0640e)
 
 ### Operations in RESTful APIs:
