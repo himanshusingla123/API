@@ -85,3 +85,11 @@ A Representational State Transfer (RESTful) API is an architectural style for de
 
 In summary, RESTful APIs use a set of standard operations (GET, POST, PUT, DELETE, PATCH) to interact with resources, and they typically use formats like JSON, XML, form data, multipart form data, and plain text for representing data exchanged between clients and servers. These standardized operations and formats contribute to thesimplicity, scalability, and interoperability of RESTful APIs, making them a popular choice for building web services and applications.
 
+## HATEOAS
+HATEOAS, which stands for Hypermedia as the Engine of Application State, is a principle in RESTful API design. It is one of the constraints of the REST architectural style, introduced by Roy Fielding in his doctoral dissertation.
+
+The HATEOAS principle states that a client interacting with a network application should be able to use hypermedia links returned in the API responses dynamically to discover and navigate the application's state transitions. In simpler terms, the server provides links within its responses that the client can follow to perform further actions or transitions within the application.
+
+This approach decouples the client from the server's implementation details, making the API more flexible and self-descriptive. Clients can navigate through an application by following links provided by the server, rather than relying on predefined endpoints or actions. This promotes a more dynamic and evolvable system.
+
+In practice, HATEOAS involves including hypermedia links in API responses, typically in formats like JSON or XML, that guide clients on what actions they can take next or what resources they can access. This allows for a more intuitive and adaptable interaction between clients and servers in distributed systems.
