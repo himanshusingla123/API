@@ -36,8 +36,10 @@ A Representational State Transfer (RESTful) API is an architectural style for de
      V                      V       V                V
 
  ```
-![image1](https://www.bing.com/images/create/state-transfer-api/2-65d19b23c38949e9880fe324760eee47?id=R3Ujxz%2fiKmBlrijIXccqlQ%3d%3d&view=detailv2&idpp=genimg&idpclose=1&thId=OIGBCE2.Mb1fQaFKkRwZisabNLl9&frame=sydedg&FORM=SYDBIC)
-![image2](https://www.bing.com/images/create/state-transfer-api/2-65d19b23c38949e9880fe324760eee47?id=2MIFUhX2JMFSEQSKhvaVLQ%3d%3d&view=detailv2&idpp=genimg&idpclose=1&thId=OIGBCE2.79h0R2CQmE1bDuj.33Kn&frame=sydedg&FORM=SYDBIC)
+![03ad197b-52fc-4a30-a48a-c65f61f65752](https://github.com/himanshusingla123/API/assets/95504579/c0cafaab-46f2-41b2-8812-5e18884b5754)
+![c86ebc41-2970-4455-bcc7-bca43c920e13](https://github.com/himanshusingla123/API/assets/95504579/3c5b5271-ca46-43ed-![5afadccc-b15c-473f-845e-9b19bb804eaf])
+![imag](https://github.com/himanshusingla123/API/assets/95504579/d4b1de56-8178-4f53-8c87-6d0890a0640e)
+
 ### Operations in RESTful APIs:
 
 1. **GET:**
@@ -83,3 +85,4 @@ A Representational State Transfer (RESTful) API is an architectural style for de
    - While less common than JSON or XML, plain text can still be used in RESTful APIs for specific use cases.
 
 In summary, RESTful APIs use a set of standard operations (GET, POST, PUT, DELETE, PATCH) to interact with resources, and they typically use formats like JSON, XML, form data, multipart form data, and plain text for representing data exchanged between clients and servers. These standardized operations and formats contribute to thesimplicity, scalability, and interoperability of RESTful APIs, making them a popular choice for building web services and applications.
+
