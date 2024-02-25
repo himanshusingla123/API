@@ -121,5 +121,3 @@ In Java web services, endpoint interfaces and annotations provide a powerful and
 - **History and Save Requests**: It often provides the ability to save requests and responses for future reference, allowing for easy repetition of tests.
 - **Support for Various Content Types**: This includes application/json, application/xml, and many others, which are commonly used in web services.
 - **Authentication**: Support for basic authentication and OAuth, enabling testing of secured endpoints.
-
-### General Advice:
