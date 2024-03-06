@@ -1,3 +1,52 @@
+## How crawlers works can you give code of it to determine it how it actually works
+Certainly! I can provide a basic example of how a simple web crawler might work in Python. This crawler will fetch web pages from URLs, parse the HTML content, and extract links from it. Please note that this is a basic example and does not cover all aspects of a real-world crawler like handling robots.txt, respecting crawl delays, or dealing with complex HTML structures. 
+
+```python
+import requests
+from bs4 import BeautifulSoup
+
+def crawl(url, max_depth=3, visited=None, depth=0):
+    if visited is None:
+        visited = set()
+    
+    if depth > max_depth:
+        return
+    
+    if url in visited:
+        return
+    
+    print("Crawling:", url)
+    visited.add(url)
+    
+    try:
+        response = requests.get(url)
+        if response.status_code == 200:
+            # Parse HTML
+            soup = BeautifulSoup(response.text, 'html.parser')
+            
+            # Extract links
+            for link in soup.find_all('a'):
+                href = link.get('href')
+                if href and href.startswith('http'):
+                    crawl(href, max_depth, visited, depth + 1)
+    
+    except Exception as e:
+        print("Error crawling:", url, e)
+
+# Example usage
+crawl("https://example.com")
+```
+
+In this code:
+
+- The `crawl` function takes a URL to crawl, a maximum depth to crawl to (to avoid crawling infinitely), a set of visited URLs to avoid revisiting, and the current depth of the crawl.
+- It checks if the current depth exceeds the maximum depth or if the URL has already been visited, in which case it stops.
+- It sends an HTTP GET request to the URL using the `requests` library and checks if the response status code is 200 (indicating success).
+- It then parses the HTML content of the page using BeautifulSoup and extracts all the `<a>` tags (links).
+- For each link found, it recursively calls the `crawl` function with the new URL, incremented depth, and updated visited set.
+
+This is a very basic example of a web crawler. Real-world crawlers would need to handle various edge cases, such as handling different types of content (e.g., images, PDFs), respecting robots.txt directives, handling redirects, and dealing with complex HTML structures. Additionally, they would need to implement politeness policies to avoid overloading servers and getting blocked.
+
 ## Explain a simple example of a web service with code of it.
 I'll provide a simple example of a web service written in Python using Flask, a popular web framework. This web service will expose a simple REST API that returns a message.
 
