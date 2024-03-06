@@ -535,6 +535,7 @@ To run this example:
 Now, if you access `http://localhost:5000/` in your web browser or via a tool like `curl`, you'll see the load balancer routing requests to different servers based on the random selection algorithm.
 
 ## give code in python where situation is given that we have four servers three servers are overloaded but firstly load balancer has to check that servers are overloaded if they give response "yes" more incoming has to be route to other server?
+```python
 # Import the requests library to send HTTP requests
 import requests
 
@@ -593,3 +594,4 @@ def handle_request(request):
     else:
         print("No available server")
         return "Error: All servers are overloaded"
+```
